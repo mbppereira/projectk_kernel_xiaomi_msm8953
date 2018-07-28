@@ -378,8 +378,7 @@ out_micb_en:
 				wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_MB);
 			else
 				wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_NONE);
-#else
-#ifdef CONFIG_MACH_XIAOMI_MARKW
+#elif CONFIG_MACH_XIAOMI_MARKW
 			wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_MB);
 #else
 			wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_CS);
@@ -414,8 +413,7 @@ out_micb_en:
 			/* Disable micbias, pullup & enable cs */
 #ifdef CONFIG_MACH_XIAOMI_TISSOT
 			wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_NONE);
-#else
-#ifdef CONFIG_MACH_XIAOMI_MARKW
+#elif CONFIG_MACH_XIAOMI_MARKW
 			wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_MB);
 #else
 			wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_CS);
@@ -442,8 +440,7 @@ out_micb_en:
 			/* Disable micbias, pullup & enable cs */
 #ifdef CONFIG_MACH_XIAOMI_TISSOT
 			wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_NONE);
-#else
-#ifdef CONFIG_MACH_XIAOMI_MARKW
+#elif CONFIG_MACH_XIAOMI_MARKW
 			wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_MB);
 #else
 			wcd_enable_curr_micbias(mbhc, WCD_MBHC_EN_CS);
